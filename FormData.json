@@ -1,0 +1,19 @@
+[   
+    {
+        "sort": 1,
+        "field": "Name",
+        "type": "input"
+    },
+    {
+        "sort": 2,
+        "field": "Status",
+        "type": "dropdown",
+        "options": ["In Progress", "Hold", "Submitted", "Completed"]
+    },
+    {
+        "sort": 3,
+        "field": "Urgent",
+        "type": "radio",
+        "options": ["Yes", "No"]
+    }
+]
