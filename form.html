@@ -2,21 +2,16 @@
 <html>
 <head>
   <title>Questionaire</title>
-  <script type="module" type="text/javascript" src="./FormData.json"></script>
   <link rel="stylesheet" type="text/css" href="form.css">
 </head>
 <body>
-    <div>
-      <form action="/api" method="post" id="uploadFile" enctype="multipart/form-data">
-        <label for="file">Find a form</label>
-        <input id="file" name="file" type="file" />
-        <button>Upload</button>
-      </form>
+    <div id="loadForm">
+        <label>Find a form</label>
+        <input id="fileContents" name="file" type="file" accept=".json" />
+        <br/>
+        <br/>
+        <button id="uploadFile">Load Form</button>
     </div>
-    <div>
-      <h1>Questionaire:</h1>
-      <div id ="form-structure"> </div>
-      <script src="./dynamicquestionaire.js"></script>
-    </div>
+    <script src="./dynamicquestionaire.js"></script>
 </body>
 </html>
